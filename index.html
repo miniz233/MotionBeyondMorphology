@@ -12,7 +12,6 @@
     <meta name="keywords" content="Motion Transfer, Cross-Category, Video Generation, Diffusion Models, Motion Representation">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
-    <!-- <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon"> -->
      <link rel="icon" href="data:,">
     
     <style>
@@ -182,7 +181,6 @@
 
 
         /* ================== Masonry Grid ================== */
-        
         .staggered-grid {
             display: flex;
             align-items: flex-start;
@@ -246,6 +244,12 @@
         .fade-in-element { opacity: 0; transform: translateY(40px); transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1), transform 1s cubic-bezier(0.25, 1, 0.5, 1); will-change: opacity, transform; }
         .fade-in-element.visible { opacity: 1; transform: translateY(0); }
 
+        /* ================== Author Affiliation Styles ================== */
+        .author-name { color: #ccc !important; font-size: 1.2rem; }
+        .author-sup { color: #74ff52 !important; font-size: 0.8rem; vertical-align: super; }
+        .affiliation-line { color: #888; font-size: 1rem; margin-top: 8px; line-height: 1.6; }
+        .affiliation-sym { color: #74ff52; font-size: 0.85rem; vertical-align: super; margin-right: 2px; }
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
@@ -255,8 +259,8 @@
     <!-- Top Navigation Bar with ScrollSpy -->
     <nav id="top-nav">
         <a href="#intro" class="top-nav-link active">Home</a>
-        <a href="#Top-Cases-Section" class="top-nav-link">Top Cases</a>
-        <a href="#More-Cases-Section" class="top-nav-link">More Cases</a>
+        <a href="#I2V-Results" class="top-nav-link">I2V Results</a>
+        <a href="#More-T2V" class="top-nav-link">More T2V</a>
         <a href="#Method" class="top-nav-link">Method</a>
         <a href="#Acknowledgement" class="top-nav-link">Acknowledgement</a>
         <a href="#ethical-considerations" class="top-nav-link">Responsible Use</a>
@@ -272,36 +276,57 @@
             </h2>
             <div style="margin-top: 30px;"></div>
 
-            <span style="opacity: 0.6; font-size: 1.35rem;">
-                <a>Zhixue Fang</a><!-- [TODO: author link] -->,
-                <a>Zhimin Zhang</a><!-- [TODO: author link] -->,
-                <a>Bi'an Du</a><!-- [TODO: author link] -->,
-                <a>Zijie Meng</a><!-- [TODO: author link] -->,
-                <a>Yan Zhou</a><!-- [TODO: author link] -->,<br>
-                <a>Wei Hu</a><!-- [TODO: author link] -->,
-                <a>Guoxin Zhang</a><!-- [TODO: author link] -->,
-                <a>Pengfei Wan</a><!-- [TODO: author link] -->,
-                <a>Kun Gai</a><!-- [TODO: author link] -->
+            <span style="opacity: 0.7; font-size: 1.2rem;">
+                <a class="author-name">Zhixue Fang</a><span class="author-sup">*</span>,
+                <a class="author-name">Zhimin Zhang</a><span class="author-sup">*</span>,
+                <a class="author-name">Bi'an Du</a>,
+                <a class="author-name">Zijie Meng</a>,
+                <a class="author-name">Yan Zhou</a><span class="author-sup">†</span>,<br>
+                <a class="author-name">Wei Hu</a><span class="author-sup">†</span>,
+                <a class="author-name">Guoxin Zhang</a>,
+                <a class="author-name">Pengfei Wan</a>,
+                <a class="author-name">Kun Gai</a>
             </span>
-            <div style="margin-top: 20px;"></div>
-            <!-- [TODO: add author affiliations] -->
+            <div class="affiliation-line">
+                <span class="affiliation-sym">*</span>Equal contribution &nbsp;&nbsp;
+                <span class="affiliation-sym">†</span>Corresponding author
+            </div>
+            <div class="affiliation-line" style="margin-top: 6px;">
+                <sup style="color:#74ff52; font-size:0.8rem;">1,2,3,5,7,8,9</sup> Kling Team &nbsp;&nbsp;
+                <sup style="color:#74ff52; font-size:0.8rem;">2,3,4,6</sup> Peking University
+            </div>
+            <div class="affiliation-line" style="margin-top: 4px; font-size: 0.85rem; color: #666;">
+                <sup>1</sup>Zhixue Fang &nbsp;
+                <sup>2</sup>Zhimin Zhang &nbsp;
+                <sup>3</sup>Bi'an Du &nbsp;
+                <sup>4</sup>Zijie Meng &nbsp;
+                <sup>5</sup>Yan Zhou &nbsp;
+                <sup>6</sup>Wei Hu &nbsp;
+                <sup>7</sup>Guoxin Zhang &nbsp;
+                <sup>8</sup>Pengfei Wan &nbsp;
+                <sup>9</sup>Kun Gai
+            </div>
+
             <div style="margin-top: 75px;"></div>
             
             <div class="publication-links" style="position: relative; z-index: 2000; transform: scale(1.2); transform-origin: center center; margin-left: -20px;">
-                <!-- [TODO: update Paper link href with actual arxiv URL] -->
                 <span class="link-block"><a href="#" class="external-link button is-normal is-rounded light-btn btn-font"><span class="icon"><i class="fas fa-file-pdf"></i></span><span class="sansfont">Paper</span></a></span>
-                <!-- [TODO: update Code link href with actual GitHub URL] -->
                 <span class="link-block"><a href="#" target="_blank" class="external-link button is-normal is-rounded light-btn btn-font"><span class="icon"><i class="fa fa-database" aria-hidden="true"></i></span><span class="sansfont">Code</span></a></span>
                 <span class="link-block"><a href="bib.txt" class="external-link button is-normal is-rounded light-btn btn-font"><span class="icon"><i class="fa fa-quote-left"></i></span><span class="sansfont">Cite</span></a></span>
-                <!-- [TODO: update or remove More Research dropdown] -->
                 <span class="link-block" style="position: relative; display: inline-block; z-index: 2000;">
                     <a href="javascript:void(0);" class="external-link button is-normal is-rounded light-btn btn-font" id="nav-button-research">
                         <span class="icon"><i class="fas fa-microscope"></i></span><span class="sansfont">More Research</span>
                     </a>
-                    <div id="dropdown-menu-research" class="dropdown-menu" style="display:none; position:absolute; top:100%; left:50%; transform:translateX(-50%); background-color:#333; border-radius:6px; padding:4px 0; margin-top:6px; min-width:240px; max-width:280px; max-height:140px; overflow-y:auto; font-size:14px; z-index:3000; white-space:nowrap; box-shadow: 0 10px 25px rgba(0,0,0,0.8);">
-                        <!-- [TODO: add related research links] -->
-                        <a href="#" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">[TODO: Research 1]</a>
-                        <a href="#" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">[TODO: Research 2]</a>
+                    <div id="dropdown-menu-research" class="dropdown-menu" style="display:none; position:absolute; top:100%; left:50%; transform:translateX(-50%); background-color:#333; border-radius:6px; padding:4px 0; margin-top:6px; min-width:260px; max-width:300px; max-height:200px; overflow-y:auto; font-size:14px; z-index:3000; white-space:nowrap; box-shadow: 0 10px 25px rgba(0,0,0,0.8);">
+                        <a href="https://arxiv.org/abs/2606.13432" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">OmniDirector</a>
+                        <a href="https://camclonemaster.github.io/" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">CamCloneMaster</a>
+                        <a href="https://ziqiaopeng.github.io/OmniSync/" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">OmniSync</a>
+                        <a href="https://arxiv.org/abs/2606.11670" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">ARGUS</a>
+                        <a href="https://huggingface.co/papers/2602.03796" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">3DiMo</a>
+                        <a href="https://klingavatar.github.io/" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">Kling-Avatar</a>
+                        <a href="https://arxiv.org/abs/2512.13313" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">Kling-Avatar 2.0</a>
+                        <a href="https://vincenthu19.github.io/GGTalker/" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">GGTalker</a>
+                        <a href="https://ymlinfeng.github.io/TARS.github.io/#Abstract" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">TARS</a>
                     </div>
                 </span>
                 <style>.dropdown-item:hover { background-color: #555; color: #74ff52 !important; }</style>
@@ -318,30 +343,14 @@
         </div>
     </div>
 
-    
 
-    <div id="Top-Cases-Section">
+
+    <div id="I2V-Results">
+        <!-- Introduction + Morphology-Adaptive merged into one section -->
         <section id="Introduction">
-            <div class="title">Introduction</div>
-            <div class="category-desc fade-in-element">
-                TL;DR: We formulate open-category motion transfer from the perspective of Motion Beyond Morphology, proposing a two-stage framework that leverages complementary motion abstractions to bootstrap cross-category supervision and subsequently internalizes it into direct source-video-conditioned motion transfer. We also introduce OpenVMT-Dataset and OpenVMT-Bench, on which our method achieves state-of-the-art performance.
-            </div>
-            <!-- [TODO: replace with actual teaser image/video] -->
-            <div id="videoBox" style="position:relative; width:100%; max-width:100%;">
-            <a href="#" target="_blank" rel="noopener">
-                <img
-                src="./motion_videos/posters/1.jpg"
-                alt="Teaser"
-                style="width:60%; display:block; cursor:pointer; margin:0 auto; border-radius: 12px;"
-                />
-            </a>
-            </div>
-        </section>
-
-        <section id="Morphology-Adaptive-Top">
             <div class="title">Morphology-Adaptive Motion Transfer</div>
             <div class="category-desc fade-in-element">
-                Our method transfers motion across substantially different subjects and structures while preserving the target appearance. From global articulated leap-and-land motion (kangaroo to lamp), to fine-grained open-and-close dynamics (dragonfly wings to flower petals), and deformable contract-and-expand motion (jellyfish to parachute), the generated results faithfully preserve the transferable dynamics of the reference while adapting to the target morphology.
+                We formulate open-category motion transfer from the perspective of Motion Beyond Morphology, proposing a two-stage framework that leverages complementary motion abstractions to bootstrap cross-category supervision and subsequently internalizes it into direct source-video-conditioned motion transfer. Our method transfers motion across substantially different subjects and structures while preserving the target appearance — from global articulated leap-and-land motion (kangaroo → lamp), to fine-grained open-and-close dynamics (dragonfly wings → flower petals), and deformable contract-and-expand motion (jellyfish → parachute).
             </div>
             
             <div class="carousel-container fade-in-element">
@@ -356,7 +365,7 @@
             </div>
         </section>
         
-        <section id="Same-Category-Top">
+        <section id="Same-Category">
             <div class="title">Same-Category Transfer</div>
             <div class="category-desc fade-in-element">
                 Same-category motion transfer preserves fine-grained dynamics within the same object category, where the source and target share similar morphological structures. Our method faithfully replicates motion details while maintaining target identity.
@@ -373,11 +382,20 @@
                 <div class="carousel-item">
                     <video playsinline controls loop preload="none" data-poster="motion_videos/posters/6.jpg" data-src="motion_videos/6.mp4"></video>
                 </div>
+                <div class="carousel-item">
+                    <video playsinline controls loop preload="none" data-poster="motion_videos/posters/7.jpg" data-src="motion_videos/7.mp4"></video>
+                </div>
+                <div class="carousel-item">
+                    <video playsinline controls loop preload="none" data-poster="motion_videos/posters/8.jpg" data-src="motion_videos/8.mp4"></video>
+                </div>
+                <div class="carousel-item">
+                    <video playsinline controls loop preload="none" data-poster="motion_videos/posters/9.jpg" data-src="motion_videos/9.mp4"></video>
+                </div>
                 <div class="carousel-arrow right-arrow"><i class="fas fa-chevron-right"></i></div>
             </div>
         </section>
 
-        <section id="Near-Category-Top" style="margin-top: 100px;">
+        <section id="Near-Category" style="margin-top: 100px;">
             <div class="title">Near-Category Transfer</div>
             <div class="category-desc fade-in-element">
                 Near-category transfer extends motion across semantically related but morphologically distinct categories. Our method adaptively preserves transferable motion attributes while avoiding source-specific structural leakage.
@@ -394,11 +412,20 @@
                 <div class="carousel-item">
                     <video playsinline controls loop preload="none" data-poster="motion_videos/posters/12.jpg" data-src="motion_videos/12.mp4"></video>
                 </div>
+                <div class="carousel-item">
+                    <video playsinline controls loop preload="none" data-poster="motion_videos/posters/13.jpg" data-src="motion_videos/13.mp4"></video>
+                </div>
+                <div class="carousel-item">
+                    <video playsinline controls loop preload="none" data-poster="motion_videos/posters/14.jpg" data-src="motion_videos/14.mp4"></video>
+                </div>
+                <div class="carousel-item">
+                    <video playsinline controls loop preload="none" data-poster="motion_videos/posters/15.jpg" data-src="motion_videos/15.mp4"></video>
+                </div>
                 <div class="carousel-arrow right-arrow"><i class="fas fa-chevron-right"></i></div>
             </div>
         </section>
 
-        <section id="Far-Category-Top">
+        <section id="Far-Category">
             <div class="title">Far-Category Transfer</div>
             <div class="category-desc fade-in-element">
                 Far-category transfer handles the most challenging scenario where source and target differ substantially in both appearance and morphology. Our method demonstrates robust motion fidelity and target preservation even under extreme category gaps.
@@ -415,84 +442,30 @@
                 <div class="carousel-item">
                     <video playsinline controls loop preload="none" data-poster="motion_videos/posters/18.jpg" data-src="motion_videos/18.mp4"></video>
                 </div>
+                <div class="carousel-item">
+                    <video playsinline controls loop preload="none" data-poster="motion_videos/posters/19.jpg" data-src="motion_videos/19.mp4"></video>
+                </div>
+                <div class="carousel-item">
+                    <video playsinline controls loop preload="none" data-poster="motion_videos/posters/20.jpg" data-src="motion_videos/20.mp4"></video>
+                </div>
+                <div class="carousel-item">
+                    <video playsinline controls loop preload="none" data-poster="motion_videos/posters/21.jpg" data-src="motion_videos/21.mp4"></video>
+                </div>
                 <div class="carousel-arrow right-arrow"><i class="fas fa-chevron-right"></i></div>
             </div>
         </section>
     </div>
 
-    <div id="More-Cases-Section">
-        <section id="More-Cases-Transition" class="fade-in-element" style="margin-top: 150px; text-align: center; margin-bottom: 50px;">
-            <h2 style="font-size: 3rem; font-weight: 300; color: #fff; margin-bottom: 10px;">More Cases Exploration</h2>
-            <p style="color: #999; font-size: 1.2rem;">Dive deeper into cross-category motion transfer results across diverse source-target relations.</p>
+    <div id="More-T2V">
+        <section id="More-T2V-Transition" class="fade-in-element" style="margin-top: 150px; text-align: center; margin-bottom: 50px;">
+            <h2 style="font-size: 3rem; font-weight: 300; color: #fff; margin-bottom: 10px;">More Text-to-Video Results</h2>
+            <p style="color: #999; font-size: 1.2rem;">Text-to-video motion transfer results, where motion is transferred from a reference video to a target described by text prompts.</p>
         </section>
 
-        <section id="Same-Category-More">
-            <div class="title" style="font-size: 24px; color: #ccc;">More: Same-Category Results (Image2Video)</div>
+        <section id="T2V-Results">
+            <div class="title" style="font-size: 24px; color: #ccc;">Text-to-Video Motion Transfer</div>
             <div class="category-desc fade-in-element" style="padding: 10px 20px; font-size: 1.05rem; margin-bottom: 20px;">
-                Additional same-category motion transfer results demonstrating fine-grained motion preservation within morphologically similar subjects.
-            </div>
-            <div class="peek-container">
-                <div class="staggered-grid">
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/7.jpg" data-src="motion_videos/7.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/8.jpg" data-src="motion_videos/8.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/9.jpg" data-src="motion_videos/9.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/4.jpg" data-src="motion_videos/4.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/5.jpg" data-src="motion_videos/5.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element force-right"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/6.jpg" data-src="motion_videos/6.mp4"></video></div></div>
-                </div>
-                <div class="peek-overlay"></div>
-            </div>
-            <div class="show-more-wrapper fade-in-element">
-                <button class="show-more-btn">Show More Cases <i class="fas fa-chevron-down"></i></button>
-            </div>
-        </section>
-
-        <section id="Near-Category-More">
-            <div class="title" style="font-size: 24px; color: #ccc;">More: Near-Category Results (Image2Video)</div>
-            <div class="category-desc fade-in-element" style="padding: 10px 20px; font-size: 1.05rem; margin-bottom: 20px;">
-                Additional near-category motion transfer results across semantically related but morphologically distinct subjects.
-            </div>
-            <div class="peek-container">
-                <div class="staggered-grid">
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/13.jpg" data-src="motion_videos/13.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/14.jpg" data-src="motion_videos/14.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/15.jpg" data-src="motion_videos/15.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/10.jpg" data-src="motion_videos/10.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/11.jpg" data-src="motion_videos/11.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element force-right"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/12.jpg" data-src="motion_videos/12.mp4"></video></div></div>
-                </div>
-                <div class="peek-overlay"></div>
-            </div>
-            <div class="show-more-wrapper fade-in-element">
-                <button class="show-more-btn">Show More Cases <i class="fas fa-chevron-down"></i></button>
-            </div>
-        </section>
-
-        <section id="Far-Category-More">
-            <div class="title" style="font-size: 24px; color: #ccc;">More: Far-Category Results (Image2Video)</div>
-            <div class="category-desc fade-in-element" style="padding: 10px 20px; font-size: 1.05rem; margin-bottom: 20px;">
-                Additional far-category motion transfer results demonstrating robust motion fidelity under extreme category gaps.
-            </div>
-            <div class="peek-container">
-                <div class="staggered-grid">
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/19.jpg" data-src="motion_videos/19.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/20.jpg" data-src="motion_videos/20.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/21.jpg" data-src="motion_videos/21.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/3.jpg" data-src="motion_videos/3.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/17.jpg" data-src="motion_videos/17.mp4"></video></div></div>
-                    <div class="staggered-item fade-in-element force-right"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/18.jpg" data-src="motion_videos/18.mp4"></video></div></div>
-                </div>
-                <div class="peek-overlay"></div>
-            </div>
-            <div class="show-more-wrapper fade-in-element">
-                <button class="show-more-btn">Show More Cases <i class="fas fa-chevron-down"></i></button>
-            </div>
-        </section>
-        
-        <section id="Text-to-Video-More">
-            <div class="title" style="font-size: 24px; color: #ccc;">More: Text-to-Video Results</div>
-            <div class="category-desc fade-in-element" style="padding: 10px 20px; font-size: 1.05rem; margin-bottom: 20px;">
-                Text-to-video motion transfer results, where motion is transferred from a reference video to a target described by text prompts.
+                Our method also supports text-to-video motion transfer, where the target appearance is determined by a text description while the motion follows the reference video.
             </div>
             <div class="peek-container">
                 <div class="staggered-grid">
@@ -516,20 +489,31 @@
     
     <section id="Method">
         <div class="title">Method</div>
-        <!-- [TODO: replace with actual method overview image] -->
         <div style="text-align: center; margin-top: 20px;">
-            <img src="./image/overall.png" alt="Method Overview" style="width: auto; max-width: 95%; height: auto; border-radius: 8px; display: inline-block;" />
+            <img src="./image/framework.png" alt="Method Overview" style="width: auto; max-width: 95%; height: auto; border-radius: 8px; display: inline-block;" />
         </div>
         <div class="description">
             Overview of our framework. <strong><em>Left</em></strong>: Stage I learns heterogeneous abstract motion conditions through a unified video-like interface and bootstraps filtered cross-category motion pairs. <strong><em>Upper right</em></strong>: Stage II internalizes this supervision by replacing abstract motion conditions with raw reference videos. <strong><em>Lower right</em></strong>: Inference directly conditions on a reference video, text, and an optional reference image, without explicit motion extraction or test-time optimization.
         </div>
     </section>
 
+    <section id="Dataset-and-Benchmark">
+        <div class="title">OpenVMT-Dataset & OpenVMT-Bench</div>
+        <div style="text-align: center; margin-top: 20px;">
+            <img src="./image/dataset_final2.png" alt="OpenVMT-Dataset" style="width: auto; max-width: 95%; height: auto; border-radius: 8px; display: inline-block;" />
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+            <img src="./image/benchmark2.png" alt="OpenVMT-Bench" style="width: auto; max-width: 95%; height: auto; border-radius: 8px; display: inline-block;" />
+        </div>
+        <div class="description">
+            <strong><em>Top</em></strong>: OpenVMT-Dataset is the first open-category training dataset with instance-level motion-equivalent cross-content pairs. <strong><em>Bottom</em></strong>: OpenVMT-Bench evaluates motion transfer under progressively increasing category gaps through Same, Near, and Far splits, supporting both T2V and I2V settings with metrics for motion fidelity, target preservation, and source leakage.
+        </div>
+    </section>
+
     <section id="Acknowledgement">
         <div class="title">Acknowledgement</div>
         <div class="description">
-            <!-- [TODO: add acknowledgement content] -->
-            [Acknowledgement to be added.]
+            We thank the Kling team and all annotation contributors whose work made this project possible.
         </div>
     </section>
 
@@ -566,8 +550,8 @@
             /* ---------------------------------------------------- */
             const navSections = [
                 { id: 'intro', element: document.querySelector('#intro') },
-                { id: 'Top-Cases-Section', element: document.querySelector('#Top-Cases-Section') },
-                { id: 'More-Cases-Section', element: document.querySelector('#More-Cases-Section') },
+                { id: 'I2V-Results', element: document.querySelector('#I2V-Results') },
+                { id: 'More-T2V', element: document.querySelector('#More-T2V') },
                 { id: 'Method', element: document.querySelector('#Method') },
                 { id: 'Acknowledgement', element: document.querySelector('#Acknowledgement') },
                 { id: 'ethical-considerations', element: document.querySelector('#ethical-considerations') },
@@ -599,7 +583,7 @@
 
 
             /* ---------------------------------------------------- */
-            /* 2. 3D Carousel Control System                        */
+            /* 2. 3D Carousel Control System (supports N items)     */
             /* ---------------------------------------------------- */
             document.querySelectorAll('.carousel-container').forEach(container => {
                 let items = Array.from(container.querySelectorAll('.carousel-item'));
@@ -609,8 +593,12 @@
                     states = ['pos-left', 'pos-center'];
                 } else if (items.length === 3) {
                     states = ['pos-left', 'pos-center', 'pos-right'];
-                } else if (items.length === 4) {
-                    states = ['pos-left', 'pos-center', 'pos-right', 'pos-hidden'];
+                } else if (items.length >= 4) {
+                    // For N >= 4 items: center, left, right, rest hidden
+                    states = ['pos-left', 'pos-center', 'pos-right'];
+                    for (let i = 3; i < items.length; i++) {
+                        states.push('pos-hidden');
+                    }
                 }
 
                 function applyStates() {
