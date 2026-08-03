@@ -277,34 +277,19 @@
             <div style="margin-top: 30px;"></div>
 
             <span style="opacity: 0.7; font-size: 1.2rem;">
-                <a class="author-name">Zhixue Fang</a><span class="author-sup">*</span>,
-                <a class="author-name">Zhimin Zhang</a><span class="author-sup">*</span>,
-                <a class="author-name">Bi'an Du</a>,
-                <a class="author-name">Zijie Meng</a>,
-                <a class="author-name">Yan Zhou</a><span class="author-sup">†</span>,<br>
-                <a class="author-name">Wei Hu</a><span class="author-sup">†</span>,
-                <a class="author-name">Guoxin Zhang</a>,
-                <a class="author-name">Pengfei Wan</a>,
-                <a class="author-name">Kun Gai</a>
+                <a class="author-name">Zhixue Fang</a><span class="author-sup">*,1</span>,
+                <a class="author-name">Zhimin Zhang</a><span class="author-sup">*,1,2</span>,
+                <a class="author-name">Bi'an Du</a><span class="author-sup">1,2</span>,
+                <a class="author-name">Zijie Meng</a><span class="author-sup">2</span>,
+                <a class="author-name">Yan Zhou</a><span class="author-sup">†,1</span>,<br>
+                <a class="author-name">Wei Hu</a><span class="author-sup">†,2</span>,
+                <a class="author-name">Guoxin Zhang</a><span class="author-sup">1</span>,
+                <a class="author-name">Pengfei Wan</a><span class="author-sup">1</span>,
+                <a class="author-name">Kun Gai</a><span class="author-sup">1</span>
             </span>
-            <div class="affiliation-line">
-                <span class="affiliation-sym">*</span>Equal contribution &nbsp;&nbsp;
-                <span class="affiliation-sym">†</span>Corresponding author
-            </div>
-            <div class="affiliation-line" style="margin-top: 6px;">
-                <sup style="color:#74ff52; font-size:0.8rem;">1,2,3,5,7,8,9</sup> Kling Team &nbsp;&nbsp;
-                <sup style="color:#74ff52; font-size:0.8rem;">2,3,4,6</sup> Peking University
-            </div>
-            <div class="affiliation-line" style="margin-top: 4px; font-size: 0.85rem; color: #666;">
-                <sup>1</sup>Zhixue Fang &nbsp;
-                <sup>2</sup>Zhimin Zhang &nbsp;
-                <sup>3</sup>Bi'an Du &nbsp;
-                <sup>4</sup>Zijie Meng &nbsp;
-                <sup>5</sup>Yan Zhou &nbsp;
-                <sup>6</sup>Wei Hu &nbsp;
-                <sup>7</sup>Guoxin Zhang &nbsp;
-                <sup>8</sup>Pengfei Wan &nbsp;
-                <sup>9</sup>Kun Gai
+            <div class="affiliation-line" style="margin-top: 10px;">
+                <sup style="color:#74ff52; font-size:0.8rem;">1</sup> Kling Team &nbsp;&nbsp;
+                <sup style="color:#74ff52; font-size:0.8rem;">2</sup> Peking University
             </div>
 
             <div style="margin-top: 75px;"></div>
@@ -318,7 +303,8 @@
                         <span class="icon"><i class="fas fa-microscope"></i></span><span class="sansfont">More Research</span>
                     </a>
                     <div id="dropdown-menu-research" class="dropdown-menu" style="display:none; position:absolute; top:100%; left:50%; transform:translateX(-50%); background-color:#333; border-radius:6px; padding:4px 0; margin-top:6px; min-width:260px; max-width:300px; max-height:200px; overflow-y:auto; font-size:14px; z-index:3000; white-space:nowrap; box-shadow: 0 10px 25px rgba(0,0,0,0.8);">
-                        <a href="https://arxiv.org/abs/2606.13432" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">OmniDirector</a>
+                        <a href="https://ymlinfeng.github.io/TARS.github.io/#Abstract" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">TARS</a>
+                        <a href="https://ymlinfeng.github.io/OmniDirector.github.io/" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">OmniDirector</a>
                         <a href="https://camclonemaster.github.io/" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">CamCloneMaster</a>
                         <a href="https://ziqiaopeng.github.io/OmniSync/" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">OmniSync</a>
                         <a href="https://arxiv.org/abs/2606.11670" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">ARGUS</a>
@@ -326,7 +312,6 @@
                         <a href="https://klingavatar.github.io/" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">Kling-Avatar</a>
                         <a href="https://arxiv.org/abs/2512.13313" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">Kling-Avatar 2.0</a>
                         <a href="https://vincenthu19.github.io/GGTalker/" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">GGTalker</a>
-                        <a href="https://ymlinfeng.github.io/TARS.github.io/#Abstract" target="_blank" class="dropdown-item" style="display:block; padding:6px 15px; color:white; text-decoration:none;">TARS</a>
                     </div>
                 </span>
                 <style>.dropdown-item:hover { background-color: #555; color: #74ff52 !important; }</style>
@@ -353,15 +338,13 @@
                 We formulate open-category motion transfer from the perspective of Motion Beyond Morphology, proposing a two-stage framework that leverages complementary motion abstractions to bootstrap cross-category supervision and subsequently internalizes it into direct source-video-conditioned motion transfer. Our method transfers motion across substantially different subjects and structures while preserving the target appearance — from global articulated leap-and-land motion (kangaroo → lamp), to fine-grained open-and-close dynamics (dragonfly wings → flower petals), and deformable contract-and-expand motion (jellyfish → parachute).
             </div>
             
-            <div class="carousel-container fade-in-element">
-                <div class="carousel-arrow left-arrow"><i class="fas fa-chevron-left"></i></div>
-                <div class="carousel-item">
-                    <video playsinline controls loop preload="none" data-poster="motion_videos/posters/1.jpg" data-src="motion_videos/1.mp4"></video>
+            <div style="display: flex; flex-direction: column; gap: 30px; max-width: 800px; margin: 40px auto 60px;" class="fade-in-element">
+                <div class="prompt-wrap audio-control" style="border-radius: 12px; overflow: hidden;">
+                    <video playsinline controls loop preload="none" data-poster="motion_videos/posters/1.jpg" data-src="motion_videos/1.mp4" style="width: 100%; border-radius: 12px; display: block;"></video>
                 </div>
-                <div class="carousel-item">
-                    <video playsinline controls loop preload="none" data-poster="motion_videos/posters/2.jpg" data-src="motion_videos/2.mp4"></video>
+                <div class="prompt-wrap audio-control" style="border-radius: 12px; overflow: hidden;">
+                    <video playsinline controls loop preload="none" data-poster="motion_videos/posters/2.jpg" data-src="motion_videos/2.mp4" style="width: 100%; border-radius: 12px; display: block;"></video>
                 </div>
-                <div class="carousel-arrow right-arrow"><i class="fas fa-chevron-right"></i></div>
             </div>
         </section>
         
