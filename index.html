@@ -333,7 +333,7 @@
     <div id="I2V-Results">
         <!-- Introduction + Morphology-Adaptive merged into one section -->
         <section id="Introduction">
-            <div class="title">Morphology-Adaptive Motion Transfer</div>
+            <div class="title">Morphology-Adaptive Motion Transfer <span style="font-size: 0.6em; color: #74ff52;">(Image-to-Video)</span></div>
             <div class="category-desc fade-in-element">
                 We formulate open-category motion transfer from the perspective of Motion Beyond Morphology, proposing a two-stage framework that leverages complementary motion abstractions to bootstrap cross-category supervision and subsequently internalizes it into direct source-video-conditioned motion transfer. Our method transfers motion across substantially different subjects and structures while preserving the target appearance — from global articulated leap-and-land motion (kangaroo → lamp), to fine-grained open-and-close dynamics (dragonfly wings → flower petals), and deformable contract-and-expand motion (jellyfish → parachute).
             </div>
@@ -349,7 +349,7 @@
         </section>
         
         <section id="Same-Category">
-            <div class="title">Same-Category Transfer</div>
+            <div class="title">Same-Category Transfer <span style="font-size: 0.6em; color: #74ff52;">(Image-to-Video)</span></div>
             <div class="category-desc fade-in-element">
                 Same-category motion transfer preserves fine-grained dynamics within the same object category, where the source and target share similar morphological structures. Our method faithfully replicates motion details while maintaining target identity.
             </div>
@@ -379,7 +379,7 @@
         </section>
 
         <section id="Near-Category" style="margin-top: 100px;">
-            <div class="title">Near-Category Transfer</div>
+            <div class="title">Near-Category Transfer <span style="font-size: 0.6em; color: #74ff52;">(Image-to-Video)</span></div>
             <div class="category-desc fade-in-element">
                 Near-category transfer extends motion across semantically related but morphologically distinct categories. Our method adaptively preserves transferable motion attributes while avoiding source-specific structural leakage.
             </div>
@@ -409,7 +409,7 @@
         </section>
 
         <section id="Far-Category">
-            <div class="title">Far-Category Transfer</div>
+            <div class="title">Far-Category Transfer <span style="font-size: 0.6em; color: #74ff52;">(Image-to-Video)</span></div>
             <div class="category-desc fade-in-element">
                 Far-category transfer handles the most challenging scenario where source and target differ substantially in both appearance and morphology. Our method demonstrates robust motion fidelity and target preservation even under extreme category gaps.
             </div>
@@ -446,10 +446,7 @@
         </section>
 
         <section id="T2V-Results">
-            <div class="title" style="font-size: 24px; color: #ccc;">Text-to-Video Motion Transfer</div>
-            <div class="category-desc fade-in-element" style="padding: 10px 20px; font-size: 1.05rem; margin-bottom: 20px;">
-                Our method also supports text-to-video motion transfer, where the target appearance is determined by a text description while the motion follows the reference video.
-            </div>
+
             <div class="peek-container">
                 <div class="staggered-grid">
                     <div class="staggered-item fade-in-element"><div class="prompt-wrap audio-control"><video playsinline controls loop preload="none" data-poster="motion_videos/posters/22.jpg" data-src="motion_videos/22.mp4"></video></div></div>
