@@ -151,9 +151,9 @@
 
         .carousel-container {
             position: relative; width: 100%;
-            height: 40vh; min-height: 350px; max-height: 550px; 
+            height: 36vh; min-height: 300px; max-height: 480px; 
             display: flex; justify-content: center; align-items: center;
-            margin: 80px auto 100px; user-select: none;
+            margin: 60px auto 80px; user-select: none;
         }
         .carousel-item {
             position: absolute; width: 60%; 
@@ -162,9 +162,9 @@
             background: #000; will-change: transform, opacity;
         }
 
-        .carousel-item.pos-center { transform: translateX(0) scale(1.25); opacity: 1; z-index: 3; filter: none; }
-        .carousel-item.pos-left { transform: translateX(-65%) scale(0.7); opacity: 0.85; z-index: 1; filter: none; cursor: pointer; }
-        .carousel-item.pos-right { transform: translateX(65%) scale(0.7); opacity: 0.85; z-index: 1; filter: none; cursor: pointer; }
+        .carousel-item.pos-center { transform: translateX(0) scale(1.1); opacity: 1; z-index: 3; filter: none; }
+        .carousel-item.pos-left { transform: translateX(-65%) scale(0.55); opacity: 0.85; z-index: 1; filter: none; cursor: pointer; }
+        .carousel-item.pos-right { transform: translateX(65%) scale(0.55); opacity: 0.85; z-index: 1; filter: none; cursor: pointer; }
         .carousel-item.pos-hidden { transform: translateX(0) scale(0.5); opacity: 0; z-index: 0; pointer-events: none; visibility: hidden; }
         
         .carousel-item.pos-left video, .carousel-item.pos-right video, .carousel-item.pos-hidden video { pointer-events: none; }
